@@ -1,0 +1,8 @@
+.home {
+    background-image: url('/images/fundo.png');
+    display: flex;
+    width:100%;
+    height:100%;
+    background-attachment: fixed;
+    
+}

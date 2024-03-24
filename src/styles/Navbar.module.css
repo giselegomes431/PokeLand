@@ -3,9 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.2em;
-    margin-bottom: 2em;
     background-color: #fff;
     color: #333;
+    border-bottom: 3px solid #111;
+    border-top: 3px solid #111;
+    border-left: 3px solid #111;
+    border-right: 3px solid #111;
 }
 
 .logo {
