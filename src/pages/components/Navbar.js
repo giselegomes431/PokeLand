@@ -13,7 +13,7 @@ export default function Navbar() {
               height="30" 
               alt="PokeLand"
             />
-            <h1>PokeLand</h1>
+            <h1 className={styles.title}>Poke<span>Land</span></h1>
         </div>
         <ul className={styles.link_items}>
             <li>

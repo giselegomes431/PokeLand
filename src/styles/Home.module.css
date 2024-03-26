@@ -1,8 +1,38 @@
 .home {
     background-image: url('/images/fundo.png');
-    display: flex;
     width:100%;
     height:100%;
     background-attachment: fixed;
     
+}
+
+.title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.title {
+    color: #E33D33;
+    text-align: center;
+    font-size: 3em;
+    margin-right: .4em;
+    text-shadow: -1px -1px 0 #fff,  
+                  1px -1px 0 #fff,
+                 -1px 1px 0 #fff,
+                  1px 1px 0 #fff;
+}
+
+.title span {
+    color: #333;;
+}
+
+.pokemon_container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
 }

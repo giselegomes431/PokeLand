@@ -41,3 +41,22 @@
 .link_items a:hover {
     border-color: #333;
 }
+
+.title_container {
+    position: absolute;
+    top: 6em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.title {
+    color: #E33D33;
+}
+
+.title span {
+    color: #333;;
+}
