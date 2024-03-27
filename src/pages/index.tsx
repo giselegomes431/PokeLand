@@ -6,10 +6,17 @@ export async function getStaticProps() {
   const maxPokemons = 251
   const api = 'https://pokeapi.co/api/v2/pokemon/'
 
-  const res = await fetch(`${api}/?limit=${maxPokemons}`)
-  const data = await res.json()
+  interface ApiResponse {
+    results: any[]; // Defina a estrutura dos resultados
+    // Outras propriedades, se houver
+}
 
-  data.results.forEach((item, index) => {
+
+
+  const res = await fetch(`${api}/?limit=${maxPokemons}`)
+  const data: ApiResponse = await res.json();
+
+  data.results.forEach((item: any, index: number) => {
     item.id = index + 1
   })
 
@@ -20,7 +27,17 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({pokemons}) {
+interface Pokemon {
+  id: number;
+  name: string;
+  // outras propriedades do Pokémon, se houver
+}
+
+interface HomeProps {
+  pokemons: Pokemon[];
+}
+
+export default function Home({ pokemons }: HomeProps) {
   return (
     <div className={styles.home}>
       <div className={styles.title_container}>
