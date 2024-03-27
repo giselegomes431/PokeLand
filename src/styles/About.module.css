@@ -1,14 +1,33 @@
 .about {
     text-align: center;
+    width: 500px;
+    background-color: #333;
+    border-radius: 6px;
+    border: 3px solid #e33d33;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: -50px;
+    margin-top: 50px;
 }
 
 .about h1 {
     font-size: 2em;
     margin-bottom: 1em;
+    color: white;
+    padding-top: -10px;
+    margin-top: 10px;
 }
 
 .about p {
     max-width: 500px;
     margin: 0 auto 1.5em;
     line-height: 1.4;
+    color: white;
+    padding-bottom: -10px;
+    margin-bottom: 10px;
+}
+
+.image {
+    padding-bottom: -10px;
+    margin-bottom: 10px;
 }
